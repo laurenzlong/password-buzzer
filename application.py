@@ -2,6 +2,7 @@ from flask import Flask, request, redirect
 import twilio.twiml
  
 application = Flask(__name__)
+passcode = "14789"
  
 @application.route("/", methods=['GET', 'POST'])
 def hello_monkey():
@@ -18,11 +19,11 @@ def handle_key():
 	resp = twilio.twiml.Response()
 	digits_pressed = request.values.get('Digits', None)
 
-	if (digits_pressed == "14789"):
+	if (digits_pressed == passcode):
 		resp.say("Passcode OK")
 		resp.play(digits=9)
 	else:
-		return redirect("/")
+		return redirect("/") #plays prompt again
 
 	return str(resp)
 
