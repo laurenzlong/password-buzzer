@@ -1,0 +1,478 @@
+Retrieving logs...
+============= i-68e6c0c8 ==============
+-------------------------------------
+/var/log/eb-version-deployment.log
+-------------------------------------
+2015-10-01 20:01:28,887 [INFO] Found the latest version manifest file <Key: elasticbeanstalk-us-east-1-737188969001,resources/environments/e-w2mphpqdms/_runtime/versions/manifest_1443729466576> from bucket elasticbeanstalk-us-east-1-737188969001 and prefix resources/environments/e-w2mphpqdms/_runtime/versions/
+2015-10-01 20:01:28,946 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-10-01 20:01:29,597 [INFO] Downloaded version label app-151001_155722 from s3 key <Key: elasticbeanstalk-us-east-1-737188969001,resources/environments/e-w2mphpqdms/_runtime/_versions/twilio-buzzer/app-151001_155722>
+2015-10-01 21:17:01,277 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-w2mphpqdms/_runtime/versions/manifest_1443734216593
+2015-10-01 21:17:01,325 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-10-01 21:17:02,248 [INFO] Downloaded version label app-151001_171644 from s3 key <Key: elasticbeanstalk-us-east-1-737188969001,resources/environments/e-w2mphpqdms/_runtime/_versions/twilio-buzzer/app-151001_171644>
+2015-10-05 15:39:20,484 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-w2mphpqdms/_runtime/versions/manifest_1444059555692
+2015-10-05 15:39:20,544 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-10-05 15:39:21,213 [INFO] Downloaded version label app-151005_113906 from s3 key <Key: elasticbeanstalk-us-east-1-737188969001,resources/environments/e-w2mphpqdms/_runtime/_versions/twilio-buzzer/app-151005_113906>
+2015-10-05 15:47:36,279 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-w2mphpqdms/_runtime/versions/manifest_1444060051876
+2015-10-05 15:47:36,338 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-10-05 15:47:36,990 [INFO] Downloaded version label app-151005_114723 from s3 key <Key: elasticbeanstalk-us-east-1-737188969001,resources/environments/e-w2mphpqdms/_runtime/_versions/twilio-buzzer/app-151005_114723>
+
+
+
+-------------------------------------
+/opt/python/log/httpd.out
+-------------------------------------
+[Thu Oct 01 20:02:35.461699 2015] [so:warn] [pid 2703] AH01574: module wsgi_module is already loaded, skipping
+[Thu Oct 01 21:17:07.598329 2015] [so:warn] [pid 3975] AH01574: module wsgi_module is already loaded, skipping
+[Mon Oct 05 15:39:26.340649 2015] [so:warn] [pid 9091] AH01574: module wsgi_module is already loaded, skipping
+[Mon Oct 05 15:47:42.178826 2015] [so:warn] [pid 9422] AH01574: module wsgi_module is already loaded, skipping
+
+
+
+-------------------------------------
+/var/log/httpd/error_log
+-------------------------------------
+[Thu Oct 01 20:03:56.261660 2015] [:error] [pid 2708] [client 172.31.23.128:9231] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://twilio-buzzer-dev.elasticbeanstalk.com/
+[Thu Oct 01 20:04:28.034166 2015] [:error] [pid 2767] [client 172.31.23.128:9246] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Oct 01 20:04:39.469217 2015] [:error] [pid 2777] [client 172.31.23.128:9267] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Oct 01 20:05:07.750592 2015] [:error] [pid 2709] [client 172.31.23.128:9276] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Oct 01 20:26:53.112828 2015] [:error] [pid 2707] [client 172.31.23.128:9841] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Oct 01 21:03:55.100590 2015] [:error] [pid 2779] [client 172.31.0.223:60348] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Oct 01 21:04:05.039445 2015] [:error] [pid 2711] [client 172.31.0.223:60362] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Oct 01 21:09:44.700211 2015] [:error] [pid 2775] [client 172.31.0.223:60504] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Oct 01 21:17:06.554102 2015] [mpm_prefork:notice] [pid 2703] AH00169: caught SIGTERM, shutting down
+[Thu Oct 01 21:17:07.604731 2015] [suexec:notice] [pid 3975] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Oct 01 21:17:07.615044 2015] [so:warn] [pid 3975] AH01574: module wsgi_module is already loaded, skipping
+[Thu Oct 01 21:17:07.617571 2015] [auth_digest:notice] [pid 3975] AH01757: generating secret for digest authentication ...
+[Thu Oct 01 21:17:07.618174 2015] [lbmethod_heartbeat:notice] [pid 3975] AH02282: No slotmem from mod_heartmonitor
+[Thu Oct 01 21:17:07.620082 2015] [mpm_prefork:notice] [pid 3975] AH00163: Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 configured -- resuming normal operations
+[Thu Oct 01 21:17:07.620101 2015] [core:notice] [pid 3975] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Oct 01 21:17:10.341300 2015] [:error] [pid 3978] [remote 127.0.0.1:34540] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Thu Oct 01 21:17:35.916455 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 00:55:19.466720 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 05:04:23.031615 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 07:05:04.062072 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 15:52:24.893109 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 16:04:54.510870 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 18:45:50.269647 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 19:40:43.654769 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 21:21:11.644078 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 21:56:38.932467 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Fri Oct 02 22:30:00.936618 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 05:20:46.673149 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 06:17:41.288807 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 07:16:55.843559 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 10:05:38.910062 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 11:29:59.799973 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 11:30:00.557010 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 11:30:00.755674 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 13:15:42.213572 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 13:15:43.082431 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 13:15:43.082545 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 13:15:43.848088 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 14:25:19.134584 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 16:19:07.617656 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 19:10:03.406902 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sat Oct 03 19:10:03.603368 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 02:35:27.151507 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 02:35:36.798951 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 02:35:46.419994 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 02:35:56.042118 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 02:36:05.627592 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 02:36:15.232166 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 02:36:27.853536 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 02:36:40.274678 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 05:09:24.655052 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 05:09:24.857398 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 05:09:25.044889 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 16:46:09.855033 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 16:46:15.914213 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 16:46:22.251753 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 16:46:34.490187 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 16:46:43.783710 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 20:46:46.567875 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 20:46:46.984552 2015] [:error] [pid 3978] [remote 172.31.23.128:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Sun Oct 04 22:16:13.598934 2015] [cgi:error] [pid 24589] [client 172.31.0.223:42475] AH02812: attempt to invoke directory as script: /var/www/cgi-bin/
+[Mon Oct 05 02:45:25.720693 2015] [:error] [pid 3978] [remote 172.31.0.223:0] mod_wsgi (pid=3978): Target WSGI script '/opt/python/current/app/application.py' does not contain WSGI application 'application'.
+[Mon Oct 05 15:39:25.248645 2015] [mpm_prefork:notice] [pid 3975] AH00169: caught SIGTERM, shutting down
+[Mon Oct 05 15:39:26.347301 2015] [suexec:notice] [pid 9091] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Oct 05 15:39:26.358057 2015] [so:warn] [pid 9091] AH01574: module wsgi_module is already loaded, skipping
+[Mon Oct 05 15:39:26.360551 2015] [auth_digest:notice] [pid 9091] AH01757: generating secret for digest authentication ...
+[Mon Oct 05 15:39:26.361182 2015] [lbmethod_heartbeat:notice] [pid 9091] AH02282: No slotmem from mod_heartmonitor
+[Mon Oct 05 15:39:26.364901 2015] [mpm_prefork:notice] [pid 9091] AH00163: Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 configured -- resuming normal operations
+[Mon Oct 05 15:39:26.364920 2015] [core:notice] [pid 9091] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Mon Oct 05 15:39:29.077729 2015] [:error] [pid 9094] [remote 127.0.0.1:33288] mod_wsgi (pid=9094): Target WSGI script '/opt/python/current/app/application.py' cannot be loaded as Python module.
+[Mon Oct 05 15:39:29.077778 2015] [:error] [pid 9094] [remote 127.0.0.1:33288] mod_wsgi (pid=9094): Exception occurred processing WSGI script '/opt/python/current/app/application.py'.
+[Mon Oct 05 15:39:29.077795 2015] [:error] [pid 9094] [remote 127.0.0.1:33288] Traceback (most recent call last):
+[Mon Oct 05 15:39:29.077809 2015] [:error] [pid 9094] [remote 127.0.0.1:33288]   File "/opt/python/current/app/application.py", line 6, in <module>
+[Mon Oct 05 15:39:29.077854 2015] [:error] [pid 9094] [remote 127.0.0.1:33288]     @app.route("/", methods=['GET', 'POST'])
+[Mon Oct 05 15:39:29.077869 2015] [:error] [pid 9094] [remote 127.0.0.1:33288] NameError: name 'app' is not defined
+[Mon Oct 05 15:39:46.944053 2015] [:error] [pid 9094] [remote 172.31.0.223:0] mod_wsgi (pid=9094): Target WSGI script '/opt/python/current/app/application.py' cannot be loaded as Python module.
+[Mon Oct 05 15:39:46.944083 2015] [:error] [pid 9094] [remote 172.31.0.223:0] mod_wsgi (pid=9094): Exception occurred processing WSGI script '/opt/python/current/app/application.py'.
+[Mon Oct 05 15:39:46.944101 2015] [:error] [pid 9094] [remote 172.31.0.223:0] Traceback (most recent call last):
+[Mon Oct 05 15:39:46.944119 2015] [:error] [pid 9094] [remote 172.31.0.223:0]   File "/opt/python/current/app/application.py", line 6, in <module>
+[Mon Oct 05 15:39:46.944143 2015] [:error] [pid 9094] [remote 172.31.0.223:0]     @app.route("/", methods=['GET', 'POST'])
+[Mon Oct 05 15:39:46.944158 2015] [:error] [pid 9094] [remote 172.31.0.223:0] NameError: name 'app' is not defined
+[Mon Oct 05 15:39:49.030514 2015] [:error] [pid 9094] [remote 172.31.0.223:0] mod_wsgi (pid=9094): Target WSGI script '/opt/python/current/app/application.py' cannot be loaded as Python module.
+[Mon Oct 05 15:39:49.030538 2015] [:error] [pid 9094] [remote 172.31.0.223:0] mod_wsgi (pid=9094): Exception occurred processing WSGI script '/opt/python/current/app/application.py'.
+[Mon Oct 05 15:39:49.030555 2015] [:error] [pid 9094] [remote 172.31.0.223:0] Traceback (most recent call last):
+[Mon Oct 05 15:39:49.030575 2015] [:error] [pid 9094] [remote 172.31.0.223:0]   File "/opt/python/current/app/application.py", line 6, in <module>
+[Mon Oct 05 15:39:49.030596 2015] [:error] [pid 9094] [remote 172.31.0.223:0]     @app.route("/", methods=['GET', 'POST'])
+[Mon Oct 05 15:39:49.030611 2015] [:error] [pid 9094] [remote 172.31.0.223:0] NameError: name 'app' is not defined
+[Mon Oct 05 15:39:58.089890 2015] [:error] [pid 9094] [remote 172.31.0.223:0] mod_wsgi (pid=9094): Target WSGI script '/opt/python/current/app/application.py' cannot be loaded as Python module.
+[Mon Oct 05 15:39:58.089915 2015] [:error] [pid 9094] [remote 172.31.0.223:0] mod_wsgi (pid=9094): Exception occurred processing WSGI script '/opt/python/current/app/application.py'.
+[Mon Oct 05 15:39:58.089932 2015] [:error] [pid 9094] [remote 172.31.0.223:0] Traceback (most recent call last):
+[Mon Oct 05 15:39:58.089948 2015] [:error] [pid 9094] [remote 172.31.0.223:0]   File "/opt/python/current/app/application.py", line 6, in <module>
+[Mon Oct 05 15:39:58.089968 2015] [:error] [pid 9094] [remote 172.31.0.223:0]     @app.route("/", methods=['GET', 'POST'])
+[Mon Oct 05 15:39:58.089983 2015] [:error] [pid 9094] [remote 172.31.0.223:0] NameError: name 'app' is not defined
+[Mon Oct 05 15:47:41.134651 2015] [mpm_prefork:notice] [pid 9091] AH00169: caught SIGTERM, shutting down
+[Mon Oct 05 15:47:42.654800 2015] [suexec:notice] [pid 9422] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Oct 05 15:47:42.665623 2015] [so:warn] [pid 9422] AH01574: module wsgi_module is already loaded, skipping
+[Mon Oct 05 15:47:42.668277 2015] [auth_digest:notice] [pid 9422] AH01757: generating secret for digest authentication ...
+[Mon Oct 05 15:47:42.668902 2015] [lbmethod_heartbeat:notice] [pid 9422] AH02282: No slotmem from mod_heartmonitor
+[Mon Oct 05 15:47:42.670861 2015] [mpm_prefork:notice] [pid 9422] AH00163: Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 configured -- resuming normal operations
+[Mon Oct 05 15:47:42.670880 2015] [core:notice] [pid 9422] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+
+
+
+-------------------------------------
+/opt/python/log/supervisord.log
+-------------------------------------
+2015-10-01 20:01:36,747 CRIT Supervisor running as root (no user in config file)
+2015-10-01 20:01:36,762 INFO RPC interface 'supervisor' initialized
+2015-10-01 20:01:36,763 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2015-10-01 20:01:36,763 INFO supervisord started with pid 2447
+2015-10-01 20:01:37,765 INFO spawned: 'httpd' with pid 2524
+2015-10-01 20:01:38,766 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-10-01 20:02:34,429 INFO stopped: httpd (exit status 0)
+2015-10-01 20:02:35,434 INFO spawned: 'httpd' with pid 2703
+2015-10-01 20:02:36,463 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-10-01 21:17:06,565 INFO stopped: httpd (exit status 0)
+2015-10-01 21:17:07,570 INFO spawned: 'httpd' with pid 3975
+2015-10-01 21:17:08,599 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-10-05 15:39:25,307 INFO stopped: httpd (exit status 0)
+2015-10-05 15:39:26,312 INFO spawned: 'httpd' with pid 9091
+2015-10-05 15:39:27,342 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-10-05 15:47:41,146 INFO stopped: httpd (exit status 0)
+2015-10-05 15:47:42,150 INFO spawned: 'httpd' with pid 9422
+2015-10-05 15:47:43,179 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+
+
+-------------------------------------
+/var/log/httpd/access_log
+-------------------------------------
+172.31.0.223 (117.21.173.36) - - [03/Oct/2015:05:20:46 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/3.0 (compatible; Indy Library)"
+172.31.23.128 (117.21.173.36) - - [03/Oct/2015:06:17:41 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/3.0 (compatible; Indy Library)"
+172.31.23.128 (130.211.155.198) - - [03/Oct/2015:07:16:55 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/20100101 Firefox/9.0.1"
+172.31.0.223 (93.113.125.11) - - [03/Oct/2015:10:05:38 +0000] "GET /nowherereally HTTP/1.1" 500 527 "-" "\"nlpproject.info research\""
+172.31.0.223 (61.49.45.47) - - [03/Oct/2015:11:29:59 +0000] "GET / HTTP/1.1" 500 527 "-" "-"
+172.31.0.223 (61.49.45.47) - - [03/Oct/2015:11:30:00 +0000] "GET / HTTP/1.1" 500 527 "-" "-"
+172.31.0.223 (61.49.45.47) - - [03/Oct/2015:11:30:00 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (compatible; Nmap Scripting Engine; http://nmap.org/book/nse.html)"
+::1 (-) - - [03/Oct/2015:11:30:59 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:11:31:00 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:11:31:01 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:11:31:02 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:11:31:03 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:11:31:04 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:11:31:05 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+172.31.23.128 (61.49.45.43) - - [03/Oct/2015:13:15:42 +0000] "GET / HTTP/1.1" 500 527 "-" "-"
+172.31.23.128 (61.49.45.43) - - [03/Oct/2015:13:15:43 +0000] "GET / HTTP/1.1" 500 527 "-" "-"
+172.31.23.128 (61.49.45.43) - - [03/Oct/2015:13:15:43 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (compatible; Nmap Scripting Engine; http://nmap.org/book/nse.html)"
+172.31.23.128 (61.49.45.43) - - [03/Oct/2015:13:15:43 +0000] "GET / HTTP/1.1" 500 527 "-" "-"
+::1 (-) - - [03/Oct/2015:13:16:43 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:13:16:44 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:13:16:45 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:13:16:46 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:13:16:47 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:13:16:48 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:13:17:00 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+172.31.23.128 (117.21.173.36) - - [03/Oct/2015:14:25:19 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/3.0 (compatible; Indy Library)"
+172.31.0.223 (221.204.177.50) - - [03/Oct/2015:16:19:07 +0000] "POST /login.action HTTP/1.1" 500 527 "-" "Mozilla/5.0"
+172.31.23.128 (179.182.14.22) - - [03/Oct/2015:19:10:03 +0000] "GET /oapi/img/adspacer.gif HTTP/1.1" 500 527 "-" "Mozilla/5.0 (Linux; U; Android 4.1.2; pt-br; GT-P3110 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+172.31.23.128 (179.182.14.22) - - [03/Oct/2015:19:10:03 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "http://54.173.114.251/oapi/img/adspacer.gif" "Mozilla/5.0 (Linux; U; Android 4.1.2; pt-br; GT-P3110 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+::1 (-) - - [03/Oct/2015:19:11:03 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:19:11:04 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [03/Oct/2015:19:11:07 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+172.31.0.223 (61.160.247.11) - - [04/Oct/2015:02:35:27 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.0.223 (61.160.247.11) - - [04/Oct/2015:02:35:36 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.0.223 (61.160.247.11) - - [04/Oct/2015:02:35:46 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.0.223 (61.160.247.11) - - [04/Oct/2015:02:35:56 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.0.223 (61.160.247.11) - - [04/Oct/2015:02:36:05 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.0.223 (61.160.247.11) - - [04/Oct/2015:02:36:15 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.0.223 (61.160.247.11) - - [04/Oct/2015:02:36:27 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.0.223 (61.160.247.11) - - [04/Oct/2015:02:36:40 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+::1 (-) - - [04/Oct/2015:02:36:56 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:02:37:06 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:02:37:41 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:02:38:03 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+172.31.0.223 (188.138.1.218) - - [04/Oct/2015:05:09:24 +0000] "GET / HTTP/1.1" 500 527 "-" "-"
+172.31.0.223 (188.138.1.218) - - [04/Oct/2015:05:09:24 +0000] "GET /robots.txt HTTP/1.1" 500 527 "-" "-"
+172.31.0.223 (188.138.1.218) - - [04/Oct/2015:05:09:25 +0000] "GET /sitemap.xml HTTP/1.1" 500 527 "-" "-"
+::1 (-) - - [04/Oct/2015:05:10:24 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:05:10:25 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:05:10:26 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:05:10:27 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:05:10:28 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:05:10:29 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:05:10:30 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+172.31.23.128 (61.160.247.11) - - [04/Oct/2015:16:46:09 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.23.128 (61.160.247.11) - - [04/Oct/2015:16:46:15 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.23.128 (61.160.247.11) - - [04/Oct/2015:16:46:22 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.23.128 (61.160.247.11) - - [04/Oct/2015:16:46:34 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+172.31.23.128 (61.160.247.11) - - [04/Oct/2015:16:46:43 +0000] "GET /manager/html HTTP/1.1" 500 527 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)"
+::1 (-) - - [04/Oct/2015:16:47:15 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:16:47:25 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:16:47:34 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:16:47:43 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:16:47:44 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+172.31.23.128 (179.182.14.22) - - [04/Oct/2015:20:46:46 +0000] "GET /oapi/img/adspacer.gif HTTP/1.1" 500 527 "-" "Mozilla/5.0 (Linux; U; Android 4.1.2; pt-br; GT-P3110 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+172.31.23.128 (179.182.14.22) - - [04/Oct/2015:20:46:46 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "http://54.173.114.251/oapi/img/adspacer.gif" "Mozilla/5.0 (Linux; U; Android 4.1.2; pt-br; GT-P3110 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+::1 (-) - - [04/Oct/2015:20:47:47 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:20:47:48 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [04/Oct/2015:20:47:49 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+172.31.0.223 (62.210.157.90) - - [04/Oct/2015:22:16:13 +0000] "GET /cgi-bin/ HTTP/1.1" 403 217 "-" "-"
+172.31.0.223 (193.19.118.8) - - [05/Oct/2015:02:45:25 +0000] "GET /login/ HTTP/1.1" 500 527 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:30.N) Gecko/20110302 Firefox/30.0"
+127.0.0.1 (-) - - [05/Oct/2015:15:39:28 +0000] "GET / HTTP/1.1" 500 527 "-" "Python-urllib/2.7"
+172.31.0.223 (207.251.103.46) - - [05/Oct/2015:15:39:46 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+172.31.0.223 (207.251.103.46) - - [05/Oct/2015:15:39:49 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+172.31.0.223 (207.251.103.46) - - [05/Oct/2015:15:39:58 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+::1 (-) - - [05/Oct/2015:15:40:46 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:40:47 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:40:48 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:40:49 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:40:50 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:40:51 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:40:52 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:40:53 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:40:57 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:40:58 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+127.0.0.1 (-) - - [05/Oct/2015:15:47:44 +0000] "GET / HTTP/1.1" 200 157 "-" "Python-urllib/2.7"
+172.31.23.128 (188.138.1.218) - - [05/Oct/2015:15:48:29 +0000] "GET / HTTP/1.1" 200 157 "-" "-"
+172.31.23.128 (188.138.1.218) - - [05/Oct/2015:15:48:29 +0000] "GET /robots.txt HTTP/1.1" 404 233 "-" "-"
+172.31.23.128 (188.138.1.218) - - [05/Oct/2015:15:48:29 +0000] "GET /sitemap.xml HTTP/1.1" 404 233 "-" "-"
+::1 (-) - - [05/Oct/2015:15:49:02 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:03 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:26 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:29 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:30 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:31 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:32 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:33 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:34 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:35 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 (-) - - [05/Oct/2015:15:49:40 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+
+
+
+-------------------------------------
+/var/log/eb-activity.log
+-------------------------------------
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/pydist-schema.json  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/test_tagopt.py  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/test_ranking.pyc  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/test_basic.pyc  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/test_install.pyc  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/__init__.pyc  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/test_signatures.py  
+     creating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/headers.dist/
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/headers.dist/setup.py  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/headers.dist/headersdist.py  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/headers.dist/setup.pyc  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/headers.dist/header.h  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/headers.dist/headersdist.pyc  
+     creating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/simple.dist/
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/simple.dist/setup.py  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/simple.dist/setup.pyc  
+     creating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/simple.dist/simpledist/
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/simple.dist/simpledist/__init__.py  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/simple.dist/simpledist/__init__.pyc  
+     creating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/complex-dist/
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/complex-dist/setup.py  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/complex-dist/setup.pyc  
+     creating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/complex-dist/complexdist/
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/complex-dist/complexdist/__init__.py  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/test/complex-dist/complexdist/__init__.pyc  
+     creating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/tool/
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/tool/__init__.py  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/wheel/tool/__init__.pyc  
+     creating: /opt/python/ondeck/app/lib/python2.7/site-packages/twilio-4.6.0.dist-info/
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/twilio-4.6.0.dist-info/RECORD  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/twilio-4.6.0.dist-info/DESCRIPTION.rst  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/twilio-4.6.0.dist-info/METADATA  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/twilio-4.6.0.dist-info/top_level.txt  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/twilio-4.6.0.dist-info/WHEEL  
+    inflating: /opt/python/ondeck/app/lib/python2.7/site-packages/twilio-4.6.0.dist-info/metadata.json  
+     creating: /opt/python/ondeck/app/lib/python2.7/distutils/
+    inflating: /opt/python/ondeck/app/lib/python2.7/distutils/__init__.py  
+    inflating: /opt/python/ondeck/app/lib/python2.7/distutils/distutils.cfg  
+    inflating: /opt/python/ondeck/app/lib/python2.7/distutils/__init__.pyc  
+[2015-10-05T15:47:38.495Z] INFO  [9291]  - [Application update/AppDeployStage0/AppDeployPreHook/03deploy.py] : Starting activity...
+[2015-10-05T15:47:38.902Z] INFO  [9291]  - [Application update/AppDeployStage0/AppDeployPreHook/03deploy.py] : Completed activity. Result:
+  You are using pip version 7.0.3, however version 7.1.2 is available.
+  You should consider upgrading via the 'pip install --upgrade pip' command.
+  Requirement already satisfied (use --upgrade to upgrade): Flask==0.10.1 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied (use --upgrade to upgrade): httplib2==0.9.2 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 2))
+  Requirement already satisfied (use --upgrade to upgrade): itsdangerous==0.24 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 3))
+  Requirement already satisfied (use --upgrade to upgrade): Jinja2==2.8 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 4))
+  Requirement already satisfied (use --upgrade to upgrade): MarkupSafe==0.23 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 5))
+  Requirement already satisfied (use --upgrade to upgrade): pytz==2015.6 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 6))
+  Requirement already satisfied (use --upgrade to upgrade): six==1.9.0 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 7))
+  Requirement already satisfied (use --upgrade to upgrade): twilio==4.6.0 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 8))
+  Requirement already satisfied (use --upgrade to upgrade): Werkzeug==0.10.4 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 9))
+  Requirement already satisfied (use --upgrade to upgrade): wheel==0.24.0 in /opt/python/run/venv/lib/python2.7/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 10))
+[2015-10-05T15:47:38.903Z] INFO  [9291]  - [Application update/AppDeployStage0/AppDeployPreHook/04configen.py] : Starting activity...
+[2015-10-05T15:47:40.257Z] INFO  [9291]  - [Application update/AppDeployStage0/AppDeployPreHook/04configen.py] : Completed activity.
+[2015-10-05T15:47:40.257Z] INFO  [9291]  - [Application update/AppDeployStage0/AppDeployPreHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/pre.
+[2015-10-05T15:47:40.257Z] INFO  [9291]  - [Application update/AppDeployStage0/EbExtensionPostBuild] : Starting activity...
+[2015-10-05T15:47:40.565Z] INFO  [9291]  - [Application update/AppDeployStage0/EbExtensionPostBuild/Infra-EmbeddedPostBuild] : Starting activity...
+[2015-10-05T15:47:40.565Z] INFO  [9291]  - [Application update/AppDeployStage0/EbExtensionPostBuild/Infra-EmbeddedPostBuild] : Completed activity.
+[2015-10-05T15:47:40.580Z] INFO  [9291]  - [Application update/AppDeployStage0/EbExtensionPostBuild] : Completed activity.
+[2015-10-05T15:47:40.580Z] INFO  [9291]  - [Application update/AppDeployStage0/InfraCleanEbextension] : Starting activity...
+[2015-10-05T15:47:40.586Z] INFO  [9291]  - [Application update/AppDeployStage0/InfraCleanEbextension] : Completed activity. Result:
+  Cleaned ebextensions subdirectories from /opt/python/ondeck/app.
+[2015-10-05T15:47:40.586Z] INFO  [9291]  - [Application update/AppDeployStage0] : Completed activity. Result:
+  Application update - Command CMD-AppDeploy stage 0 completed
+[2015-10-05T15:47:40.586Z] INFO  [9291]  - [Application update/AppDeployStage1] : Starting activity...
+[2015-10-05T15:47:40.586Z] INFO  [9291]  - [Application update/AppDeployStage1/AppDeployEnactHook] : Starting activity...
+[2015-10-05T15:47:40.586Z] INFO  [9291]  - [Application update/AppDeployStage1/AppDeployEnactHook/01flip.py] : Starting activity...
+[2015-10-05T15:47:44.920Z] INFO  [9291]  - [Application update/AppDeployStage1/AppDeployEnactHook/01flip.py] : Completed activity. Result:
+  httpd: stopped
+  httpd: started
+  httpd                            RUNNING   pid 9422, uptime 0:00:02
+[2015-10-05T15:47:44.920Z] INFO  [9291]  - [Application update/AppDeployStage1/AppDeployEnactHook/02create_pids_for_monitoring.sh] : Starting activity...
+[2015-10-05T15:47:45.015Z] INFO  [9291]  - [Application update/AppDeployStage1/AppDeployEnactHook/02create_pids_for_monitoring.sh] : Completed activity. Result:
+  + chmod 0755 /var/run/httpd
+  + /opt/elasticbeanstalk/bin/healthd-track-pidfile --proxy httpd
+  + /opt/elasticbeanstalk/bin/healthd-track-pidfile --name application --location /opt/python/run/supervisord.pid
+[2015-10-05T15:47:45.016Z] INFO  [9291]  - [Application update/AppDeployStage1/AppDeployEnactHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/enact.
+[2015-10-05T15:47:45.016Z] INFO  [9291]  - [Application update/AppDeployStage1/AppDeployPostHook] : Starting activity...
+[2015-10-05T15:47:45.016Z] INFO  [9291]  - [Application update/AppDeployStage1/AppDeployPostHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/post.
+[2015-10-05T15:47:45.016Z] INFO  [9291]  - [Application update/AppDeployStage1] : Completed activity. Result:
+  Application version switch - Command CMD-AppDeploy stage 1 completed
+[2015-10-05T15:47:45.016Z] INFO  [9291]  - [Application update/AddonsAfter] : Starting activity...
+[2015-10-05T15:47:45.016Z] INFO  [9291]  - [Application update/AddonsAfter/ConfigLogRotation] : Starting activity...
+[2015-10-05T15:47:45.017Z] INFO  [9291]  - [Application update/AddonsAfter/ConfigLogRotation/10-config.sh] : Starting activity...
+[2015-10-05T15:47:45.110Z] INFO  [9291]  - [Application update/AddonsAfter/ConfigLogRotation/10-config.sh] : Completed activity. Result:
+  Disabled forced hourly log rotation.
+[2015-10-05T15:47:45.110Z] INFO  [9291]  - [Application update/AddonsAfter/ConfigLogRotation] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/addons/logpublish/hooks/config.
+[2015-10-05T15:47:45.110Z] INFO  [9291]  - [Application update/AddonsAfter] : Completed activity.
+[2015-10-05T15:47:45.110Z] INFO  [9291]  - [Application update] : Completed activity. Result:
+  Application update - Command CMD-AppDeploy succeeded
+[2015-10-05T15:54:50.534Z] INFO  [9580]  - [CMD-TailLogs - stage ] : Starting activity...
+[2015-10-05T15:54:50.804Z] INFO  [9580]  - [CMD-TailLogs - stage /AddonsBefore] : Starting activity...
+[2015-10-05T15:54:50.804Z] INFO  [9580]  - [CMD-TailLogs - stage /AddonsBefore] : Completed activity.
+[2015-10-05T15:54:50.804Z] INFO  [9580]  - [CMD-TailLogs - stage /TailLogs] : Starting activity...
+[2015-10-05T15:54:50.804Z] INFO  [9580]  - [CMD-TailLogs - stage /TailLogs/TailLogs] : Starting activity...
+
+
+
+-------------------------------------
+/var/log/eb-commandprocessor.log
+-------------------------------------
+[2015-10-05T15:39:19.577Z] DEBUG [8960]  : Refreshing metadata..
+[2015-10-05T15:39:19.845Z] DEBUG [8960]  : Refreshed environment metadata.
+[2015-10-05T15:39:19.845Z] DEBUG [8960]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2015-10-05T15:39:19.846Z] DEBUG [8960]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2015-10-05T15:39:19.846Z] INFO  [8960]  : Found enabled addons: ["logpublish"].
+[2015-10-05T15:39:19.847Z] INFO  [8960]  : Updating Command definition of addon logpublish.
+[2015-10-05T15:39:19.847Z] DEBUG [8960]  : Loaded definition of Command CMD-AppDeploy.
+[2015-10-05T15:39:19.847Z] INFO  [8960]  : Executing command CMD-AppDeploy activities...
+[2015-10-05T15:39:19.847Z] DEBUG [8960]  : Setting environment variables..
+[2015-10-05T15:39:19.847Z] INFO  [8960]  : Running AddonsBefore for command CMD-AppDeploy...
+[2015-10-05T15:39:19.847Z] DEBUG [8960]  : Running stages of Command CMD-AppDeploy from stage 0 to stage 1...
+[2015-10-05T15:39:19.847Z] INFO  [8960]  : Running stage 0 of command CMD-AppDeploy...
+[2015-10-05T15:39:19.847Z] INFO  [8960]  : Running leader election...
+[2015-10-05T15:39:20.111Z] INFO  [8960]  : Instance is Leader.
+[2015-10-05T15:39:20.111Z] DEBUG [8960]  : Loaded 7 actions for stage 0.
+[2015-10-05T15:39:20.111Z] INFO  [8960]  : Running 1 of 7 actions: InfraWriteConfig...
+[2015-10-05T15:39:20.114Z] INFO  [8960]  : Running 2 of 7 actions: InfraWriteApp1...
+[2015-10-05T15:39:20.115Z] INFO  [8960]  : Running 3 of 7 actions: InfraWriteApp2...
+[2015-10-05T15:39:21.250Z] INFO  [8960]  : Running 4 of 7 actions: EbExtensionPreBuild...
+[2015-10-05T15:39:21.498Z] INFO  [8960]  : Running 5 of 7 actions: AppDeployPreHook...
+[2015-10-05T15:39:24.338Z] INFO  [8960]  : Running 6 of 7 actions: EbExtensionPostBuild...
+[2015-10-05T15:39:24.673Z] INFO  [8960]  : Running 7 of 7 actions: InfraCleanEbextension...
+[2015-10-05T15:39:24.679Z] INFO  [8960]  : Running stage 1 of command CMD-AppDeploy...
+[2015-10-05T15:39:24.679Z] DEBUG [8960]  : Loaded 2 actions for stage 1.
+[2015-10-05T15:39:24.679Z] INFO  [8960]  : Running 1 of 2 actions: AppDeployEnactHook...
+[2015-10-05T15:39:29.181Z] INFO  [8960]  : Running 2 of 2 actions: AppDeployPostHook...
+[2015-10-05T15:39:29.181Z] INFO  [8960]  : Running AddonsAfter for command CMD-AppDeploy...
+[2015-10-05T15:39:29.276Z] INFO  [8960]  : Command CMD-AppDeploy succeeded!
+[2015-10-05T15:39:29.276Z] INFO  [8960]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[]}]}
+[2015-10-05T15:47:35.236Z] DEBUG [9291]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-10-05T15:47:35.236Z] DEBUG [9291]  : Checking if the command processor should execute...
+[2015-10-05T15:47:35.238Z] DEBUG [9291]  : Checking whether the command is applicable to instance (i-68e6c0c8)..
+[2015-10-05T15:47:35.238Z] INFO  [9291]  : Command is applicable to this instance (i-68e6c0c8)..
+[2015-10-05T15:47:35.238Z] DEBUG [9291]  : Checking if the received command stage is valid..
+[2015-10-05T15:47:35.238Z] INFO  [9291]  : No stage_num in command. Valid stage..
+[2015-10-05T15:47:35.239Z] INFO  [9291]  : Received command CMD-AppDeploy: {"execution_data":"{\"leader_election\":\"true\"}","instance_ids":["i-68e6c0c8"],"data":"manifest_1444060051876","command_name":"CMD-AppDeploy","api_version":"1.0","resource_name":"AWSEBAutoScalingGroup","request_id":"6184d1b4-6b78-11e5-9a4d-69fe683f0007","command_timeout":"600"}
+[2015-10-05T15:47:35.239Z] INFO  [9291]  : Command processor should execute command.
+[2015-10-05T15:47:35.239Z] DEBUG [9291]  : Storing current stage..
+[2015-10-05T15:47:35.239Z] DEBUG [9291]  : Stage_num does not exist. Not saving null stage. Returning..
+[2015-10-05T15:47:35.239Z] INFO  [9291]  : Executing Application update
+[2015-10-05T15:47:35.239Z] INFO  [9291]  : Executing command: CMD-AppDeploy...
+[2015-10-05T15:47:35.239Z] DEBUG [9291]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-10-05T15:47:35.239Z] DEBUG [9291]  : Refreshing metadata..
+[2015-10-05T15:47:35.505Z] DEBUG [9291]  : Refreshed environment metadata.
+[2015-10-05T15:47:35.505Z] DEBUG [9291]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2015-10-05T15:47:35.506Z] DEBUG [9291]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2015-10-05T15:47:35.506Z] INFO  [9291]  : Found enabled addons: ["logpublish"].
+[2015-10-05T15:47:35.507Z] INFO  [9291]  : Updating Command definition of addon logpublish.
+[2015-10-05T15:47:35.508Z] DEBUG [9291]  : Loaded definition of Command CMD-AppDeploy.
+[2015-10-05T15:47:35.508Z] INFO  [9291]  : Executing command CMD-AppDeploy activities...
+[2015-10-05T15:47:35.508Z] DEBUG [9291]  : Setting environment variables..
+[2015-10-05T15:47:35.508Z] INFO  [9291]  : Running AddonsBefore for command CMD-AppDeploy...
+[2015-10-05T15:47:35.508Z] DEBUG [9291]  : Running stages of Command CMD-AppDeploy from stage 0 to stage 1...
+[2015-10-05T15:47:35.508Z] INFO  [9291]  : Running stage 0 of command CMD-AppDeploy...
+[2015-10-05T15:47:35.508Z] INFO  [9291]  : Running leader election...
+[2015-10-05T15:47:35.774Z] INFO  [9291]  : Instance is Leader.
+[2015-10-05T15:47:35.774Z] DEBUG [9291]  : Loaded 7 actions for stage 0.
+[2015-10-05T15:47:35.774Z] INFO  [9291]  : Running 1 of 7 actions: InfraWriteConfig...
+[2015-10-05T15:47:35.776Z] INFO  [9291]  : Running 2 of 7 actions: InfraWriteApp1...
+[2015-10-05T15:47:35.777Z] INFO  [9291]  : Running 3 of 7 actions: InfraWriteApp2...
+[2015-10-05T15:47:37.027Z] INFO  [9291]  : Running 4 of 7 actions: EbExtensionPreBuild...
+[2015-10-05T15:47:37.476Z] INFO  [9291]  : Running 5 of 7 actions: AppDeployPreHook...
+[2015-10-05T15:47:40.257Z] INFO  [9291]  : Running 6 of 7 actions: EbExtensionPostBuild...
+[2015-10-05T15:47:40.580Z] INFO  [9291]  : Running 7 of 7 actions: InfraCleanEbextension...
+[2015-10-05T15:47:40.586Z] INFO  [9291]  : Running stage 1 of command CMD-AppDeploy...
+[2015-10-05T15:47:40.586Z] DEBUG [9291]  : Loaded 2 actions for stage 1.
+[2015-10-05T15:47:40.586Z] INFO  [9291]  : Running 1 of 2 actions: AppDeployEnactHook...
+[2015-10-05T15:47:45.016Z] INFO  [9291]  : Running 2 of 2 actions: AppDeployPostHook...
+[2015-10-05T15:47:45.016Z] INFO  [9291]  : Running AddonsAfter for command CMD-AppDeploy...
+[2015-10-05T15:47:45.110Z] INFO  [9291]  : Command CMD-AppDeploy succeeded!
+[2015-10-05T15:47:45.110Z] INFO  [9291]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[]}]}
+[2015-10-05T15:54:50.531Z] DEBUG [9580]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-10-05T15:54:50.531Z] DEBUG [9580]  : Checking if the command processor should execute...
+[2015-10-05T15:54:50.534Z] DEBUG [9580]  : Checking whether the command is applicable to instance (i-68e6c0c8)..
+[2015-10-05T15:54:50.534Z] INFO  [9580]  : Command is applicable to this instance (i-68e6c0c8)..
+[2015-10-05T15:54:50.534Z] DEBUG [9580]  : Checking if the received command stage is valid..
+[2015-10-05T15:54:50.534Z] INFO  [9580]  : No stage_num in command. Valid stage..
+[2015-10-05T15:54:50.534Z] INFO  [9580]  : Received command CMD-TailLogs: {"execution_data":"{\"aws_access_key_id\":\"ASIAIDQILWM2YHCYQREQ\",\"signature\":\"AC5Y68lDpaX5NL\\\/409nML6Se75E=\",\"security_token\":\"AQoDYXdzEDEasALMWmCpNIrUtAXLVY7yCWmy+5d9P9GrFYxmOm8huoxnk8ICzzdnBElu6lM8DV2qJJx\\\/UClweEH6j++3GG1YgSkRDC7xivSJWpEbuUdsK+nkQilsAsGceCUnUV1cR9ULp5qmT1H2ffkcF6LpfxUs0hk9or0pOnp+hIWhTC\\\/5ui7R1fUNPmcdx5xWkdCUSQDcqWOA2vFPrEUiFY+2bJ3azbPmAez\\\/YsbWxLvIjVgiEOs0rpFx+DiwI+TaUimF4kw3+xq\\\/+LaMPunUMfwrGiWPmzX6iV4WnJTb7F7BnkI+3FTOMAYfb4vHmUE\\\/AySCw86AalCk2CfM+ELeHJWqAPX8x2atLLPPni+q77d\\\/+DzWb1xG2XoTC82gRy9ifwTlgYX2TNkA0JhWY2ByUGj4z42xEFYLIMi6yrAF\",\"policy\":\"eyJleHBpcmF0aW9uIjoiMjAxNS0xMC0wNVQxNjoyNDo0OC4yNjlaIiwiY29uZGl0aW9ucyI6W1sic3RhcnRzLXdpdGgiLCIkeC1hbXotbWV0YS10aW1lX3N0YW1wIiwiIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLXB1Ymxpc2hfbWVjaGFuaXNtIiwiIl0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCJyZXNvdXJjZXNcL2Vudmlyb25tZW50c1wvbG9nc1wvIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLWJhdGNoX2lkIiwiIl0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLWZpbGVfbmFtZSIsIiJdLFsic3RhcnRzLXdpdGgiLCIkeC1hbXotc2VjdXJpdHktdG9rZW4iLCIiXSxbInN0YXJ0cy13aXRoIiwiJENvbnRlbnQtVHlwZSIsIiJdLFsiZXEiLCIkYnVja2V0IiwiZWxhc3RpY2JlYW5zdGFsay11cy1lYXN0LTEtNzM3MTg4OTY5MDAxIl0sWyJlcSIsIiRhY2wiLCJwcml2YXRlIl1dfQ==\"}","instance_ids":["i-68e6c0c8"],"data":"67c274bd-6b79-11e5-ae4a-a3c0ced229eb","command_name":"CMD-TailLogs","api_version":"1.0","resource_name":"AWSEBAutoScalingGroup","request_id":"67c274bd-6b79-11e5-ae4a-a3c0ced229eb","command_timeout":"600"}
+[2015-10-05T15:54:50.534Z] INFO  [9580]  : Command processor should execute command.
+[2015-10-05T15:54:50.534Z] DEBUG [9580]  : Storing current stage..
+[2015-10-05T15:54:50.534Z] DEBUG [9580]  : Stage_num does not exist. Not saving null stage. Returning..
+[2015-10-05T15:54:50.534Z] INFO  [9580]  : Executing CMD-TailLogs - stage 
+[2015-10-05T15:54:50.534Z] INFO  [9580]  : Executing command: CMD-TailLogs...
+[2015-10-05T15:54:50.534Z] DEBUG [9580]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-10-05T15:54:50.534Z] DEBUG [9580]  : Refreshing metadata..
+[2015-10-05T15:54:50.802Z] DEBUG [9580]  : Refreshed environment metadata.
+[2015-10-05T15:54:50.802Z] DEBUG [9580]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2015-10-05T15:54:50.802Z] DEBUG [9580]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2015-10-05T15:54:50.803Z] INFO  [9580]  : Found enabled addons: ["logpublish"].
+[2015-10-05T15:54:50.803Z] INFO  [9580]  : Updating Command definition of addon logpublish.
+[2015-10-05T15:54:50.804Z] DEBUG [9580]  : Loaded definition of Command CMD-TailLogs.
+[2015-10-05T15:54:50.804Z] INFO  [9580]  : Executing command CMD-TailLogs activities...
+[2015-10-05T15:54:50.804Z] DEBUG [9580]  : Setting environment variables..
+[2015-10-05T15:54:50.804Z] INFO  [9580]  : Running AddonsBefore for command CMD-TailLogs...
+[2015-10-05T15:54:50.804Z] DEBUG [9580]  : Running stages of Command CMD-TailLogs from stage 0 to stage 0...
+[2015-10-05T15:54:50.804Z] INFO  [9580]  : Running stage 0 of command CMD-TailLogs...
+[2015-10-05T15:54:50.804Z] DEBUG [9580]  : Loaded 1 actions for stage 0.
+[2015-10-05T15:54:50.804Z] INFO  [9580]  : Running 1 of 1 actions: TailLogs...
+
+
+
