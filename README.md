@@ -10,12 +10,12 @@ Your buzzer system must be the type that connects to mobile phones. Your current
 ##Instructions for Set Up
 
 1. Download this repository
-2. Create a Twilio account at https://www.twilio.com/try-twilio, and then create a Twilio phone number that can receive voice calls. This requires a small subscription fee (a few dollars per month).
+2. Create a Twilio account at https://www.twilio.com/try-twilio, and then create a Twilio phone number that can receive voice calls. This requires a small subscription fee (a few dollars per month). I recommend getting a number that corresponds with your geography as most buzzers cannot dial long distance phone numbers. 
 3. Download virtulenv by typing the following command into your command prompt: 
 `easy_install virtualenv`
 4. Change your working directory to the directory where you've downloaded the project and type the following into your command prompt:
 `pip install -r requirements.txt`
-Optional: Do a quick test at this point. Type `python application.py` into your command prompt. Go to localhost:5000 in your broswer, you shoud see "please enter passcode" in plain text. 
+Optional: Do a quick test at this point. Type `python application.py` into your command prompt. Go to [localhost:5000](localhost:5000) in your browser, you should see "please enter passcode" in plain text. 
 5. Modify the `passcode` variable in `application.py` to be any password you would like. Modify the `passcodeLen` variable to be the length of the passcode you've chosen. Modify the `unlockDigit` variable to be the number key that you currently need to press to let a guest in.
 6. Twilio needs to find your server on the internet, so use any hosting service you'd like. The [Flask documentation](http://flask.pocoo.org/docs/0.10/quickstart/#quickstart-deployment) has suggestions. I personally used [ngrok](https://ngrok.com/) for testing the app, and [AWS](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html) for production.
 7. Follow these [instructions](https://www.twilio.com/help/faq/voice/how-do-i-assign-my-twilio-number-to-my-voice-application) for connecting your Twilio phone number to the URL of your hosted application. 
