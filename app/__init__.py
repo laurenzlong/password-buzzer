@@ -1,12 +1,12 @@
 from flask import Flask, request, redirect
 import twilio.twiml
  
-application = Flask(__name__)
-passcode = "14789" # passcode that your guest must enter when prompted
-passcodeLen = 5 # length of the passcode
+app = Flask(__name__)
+passcode = "1" # passcode that your guest must enter when prompted
+passcodeLen = 1 # length of the passcode
 unlockDigit = 9 #the key that the receiver currently needs to press to unlock the door
  
-@application.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def hello_monkey(): 
     """Respond to incoming requests."""
     resp = twilio.twiml.Response()
@@ -16,7 +16,7 @@ def hello_monkey():
  
     return str(resp)
  
-@application.route("/handle-key", methods=['GET', 'POST'])
+@app.route("/handle-key", methods=['GET', 'POST'])
 def handle_key():
 	resp = twilio.twiml.Response()
 	digits_pressed = request.values.get('Digits', None)
@@ -28,6 +28,3 @@ def handle_key():
 		return redirect("/") #plays prompt again
 
 	return str(resp)
-
-if __name__ == "__main__":
-    application.run(debug=True)
